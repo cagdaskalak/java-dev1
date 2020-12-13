@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class javaödev {
+    public static void main(String[] args) {
+        String sys_kul_adı = "cagdaskalak";
+        String sys_parola = "195541060";
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Kullanıcı Adı:");
+
+        String kul_adı = scan.nextLine();
+        System.out.println("Parola:");
+
+        String  parola = scan.nextLine();
+
+       if ( !(sys_kul_adı.equals(kul_adı))  && !(sys_parola.equals(parola)) ) {
+
+        System.out.println("Kullanıcı Adı ve Parola Yanlış... Kontrol Edip Tekrar Deneyiniz!");
+
+       }
+       else if ( (sys_kul_adı.equals(kul_adı))  && !(sys_parola.equals(parola)) ) {
+
+        System.out.println("Parola Yanlış... Kontrol Edip Tekrar Deneyiniz!");
+
+       }
+       else if ( !(sys_kul_adı.equals(kul_adı))  && (sys_parola.equals(parola)) ) {
+
+        System.out.println("Kullanıcı Adı Yanlış... Kontrol Edip Tekrar Deneyiniz!");
+
+       }
+       else {
+
+       System.out.println("Giriş Başarılı");
+
+       }
+
+    }
+}
